@@ -1,0 +1,14 @@
+FROM centos:latest
+
+USER root
+
+RUN yum install python3 -y
+RUN pip3 install anaconda
+RUN pip3 install --upgrade setuptools
+RUN pip3 install ez_setup
+RUN pip3 install scikit-build
+RUN pip3 install jupyter
+RUN yum install firefox -y
+RUN yum install net-tools -y
+RUN yum install PackageKit-gtk3-module libcanberra-gtk2 -y
+
